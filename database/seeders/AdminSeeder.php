@@ -16,7 +16,7 @@ class AdminSeeder extends Seeder{
         $admin->admin_phone = '81805467977';
         $admin->admin_alamat = 'Denpasar';
         $admin->admin_gender = 'l';
-        $admin->admin_tgl_lahir = '1996-23-11';
+        $admin->admin_tgl_lahir = '1996-11-23';
         $admin->is_admin = true;
         $admin->save();
     }
