@@ -1,0 +1,22 @@
+{
+    "name": "codeigniter/framework",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/restudio/codeigniter-cli"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "firebase/php-jwt": "^6.10",
+        "vlucas/phpdotenv": "^5.6",
+        "ramsey/uuid": "^4.2",
+        "pascaldevink/shortuuid": "^4.0",
+        "luthier/luthier": "^1.0",
+        "yidas/codeigniter-model": "^2.19"
+    },
+    "require-dev": {
+        "restudio/codeigniter-cli": "*"
+    }
+}
