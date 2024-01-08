@@ -17,6 +17,16 @@ user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 /vendor/
 
+# codeigniter-cli
+ci_instance.php
+!packages/restudio/codeigniter-cli/ci_instance.php
+cli
+!packages/restudio/codeigniter-cli/cli
+tmp/*
+config/*
+
+.env
+
 # IDE Files
 #-------------------------
 /nbproject/
