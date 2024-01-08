@@ -19,8 +19,15 @@
  */
 
 Route::get('/', function(){
-   luthier_info();
-})->name('homepage');
+   redirect('/login');
+});
+
+Route::match(['GET', 'POST'], '/login', 'Auth/LoginController@index');
+Route::get('/logout', 'Auth/LoginController@keluar_app');
+
+//===================================Route Dashboard===================================//
+Route::get('/dashboard', 'DashboardController@index', ['middleware' => ['AuthMiddleware']]);
+//===================================Route Dashboard===================================//
 
 Route::set('404_override', function(){
     show_404();
